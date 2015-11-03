@@ -7,7 +7,7 @@ $urlRouterProvider.otherwise('/home');
 $stateProvider
 .state('home', {
 	url: '/home',
-	// templateUrl: 'dadf' ,
+	templateUrl: 'app/home/homeTmpl.html' ,
 	controller: 'homeCtrl'	
 })
 
