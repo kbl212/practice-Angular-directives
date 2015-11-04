@@ -1,5 +1,5 @@
 <div>{{test}}</div>
 
-<dir-weather scope="users[0]"></dir-weather>
+<dir-weather weather-call ="getWeather(city)" current-user="users[0]"></dir-weather>
 
 <dir-display test="myTest" my-check="checkItOut" ng-repeat="user in users"></dir-display>

@@ -5,13 +5,13 @@ var app = angular.module('directivePractice')
 			templateUrl: 'app/dirDisplay/dirDisplayTmpl.html',
 			link: function (scope, element, attributes) {
 				// console.log(scope, element, attributes); //this is just to see in the console what they are returning. see homeTmpl.html
-				scope.showUserAgeEmail = true;
+				scope.showUserAgeEmail = false;
 				element.on('click', function () {
-					scope.showUserAgeEmail = false;
+					scope.showUserAgeEmail = true;
 					scope.$apply(); // this is super important to help the function actually apply to the DOM
 					// console.log(scope.showUserAgeEmail); // also just for testing
-				})
-				console.log(scope);
+				p})
+				//console.log(scope);
 			}
 		}
 	})

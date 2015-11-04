@@ -1,6 +1,14 @@
 var app = angular.module('directivePractice')
 
-.controller('homeCtrl', function($scope){
+.controller('homeCtrl', function($scope, weatherService){
+  
+  $scope.getWeather = function(city){
+      weatherService.getWeather(city).then(function(response){
+        
+      })
+  console.log( weatherService.getWeather());
+  };
+  
 	$scope.test = "TEST";
 	
 	$scope.users = [
